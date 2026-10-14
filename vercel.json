@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "npm install --prefix client --legacy-peer-deps && npm run build --prefix client",
+  "outputDirectory": "client/dist",
+  "installCommand": "npm install --legacy-peer-deps",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
